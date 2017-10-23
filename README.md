@@ -3,8 +3,9 @@
 
 ## 使用說明
   
-直接覆蓋到 /usr/share/pve-manager/locale/ 即可。
-
+直接覆蓋到 /usr/share/pve-manager/locale/ 內同名檔案即可。
+  
+這個版本很粗淺，會利用時間繼續完善。
 
   
 ## 畫面範例
