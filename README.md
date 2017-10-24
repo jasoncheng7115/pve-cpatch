@@ -3,8 +3,11 @@
 
 ## 使用說明
   
-直接把「pve-lang-zh_CN.js」覆蓋到 /usr/share/pve-manager/locale/ 內同名檔案即可。
-  
+pve-lang-zh_TW.js 覆蓋到 /usr/share/pve-manager/locale/ 內。
+pvemanagerlib.js 覆蓋到 /usr/share/pve-manager/js/ 內。
+
+完成後，登入頁面的語系即可選擇「Chinese (Taiwan)」
+
 這個版本很粗淺，會利用時間繼續完善。（修改自內建的簡體中文版）
   
 
