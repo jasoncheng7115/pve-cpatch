@@ -31,4 +31,28 @@ pvemanagerlib.js 覆蓋到 /usr/share/pve-manager/js/ 內。
 
 
 #### 正體中文化後介面
-![image](https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/%E8%AA%AA%E6%98%8E%E5%9C%96/vm_summary.png)
+&nbsp;&nbsp;
+登入介面
+![image](https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/%E8%AA%AA%E6%98%8E%E5%9C%96/Login.png)
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+
+節點概觀
+![image](https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/%E8%AA%AA%E6%98%8E%E5%9C%96/node_summary.png)
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+
+容器概觀
+![image](https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/%E8%AA%AA%E6%98%8E%E5%9C%96/LXC_Summary.png)
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+
+虛擬機硬體
+![image](https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/%E8%AA%AA%E6%98%8E%E5%9C%96/VM_Hardware.png)
+&nbsp;&nbsp;
+&nbsp;&nbsp;
+
+虛擬機選項
+![image](https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/%E8%AA%AA%E6%98%8E%E5%9C%96/VM_Options.png)
+&nbsp;&nbsp;
+&nbsp;&nbsp;
