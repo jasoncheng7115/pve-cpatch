@@ -12,12 +12,12 @@ pvemanagerlib.js 覆蓋到 /usr/share/pve-manager/js/ 內。
           
  
 ## 使用指令    
-    mv /usr/share/pve-manager/js/pvemanagerlib.js /usr/share/pve-manager/js/pvemanagerlib.js.bak
-    mv /usr/share/pve-manager/locale/pve-lang-zh_TW.js /usr/share/pve-manager/js/locale/pve-lang-zh_TW.js.bak
-    rm /usr/share/pve-manager/js/pvemanagerlib.js
-    rm /usr/share/pve-manager/locale/pve-lang-zh_TW.js
-    wget -P /usr/share/pve-manager/js/ https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/js/pvemanagerlib.js
-    wget -P /usr/share/pve-manager/locale/ https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/locale/pve-lang-zh_TW.js
+    # mv /usr/share/pve-manager/js/pvemanagerlib.js /usr/share/pve-manager/js/pvemanagerlib.js.bak
+    # mv /usr/share/pve-manager/locale/pve-lang-zh_TW.js /usr/share/pve-manager/js/locale/pve-lang-zh_TW.js.bak
+    # rm /usr/share/pve-manager/js/pvemanagerlib.js
+    # rm /usr/share/pve-manager/locale/pve-lang-zh_TW.js
+    # wget -P /usr/share/pve-manager/js/ https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/js/pvemanagerlib.js
+    # wget -P /usr/share/pve-manager/locale/ https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/locale/pve-lang-zh_TW.js
 
 完成後，登入頁面的語系即可選擇「Chinese (Taiwan)」
 
