@@ -31,7 +31,7 @@
     // PVE 5.1
     # mv /usr/share/pve-i18n/pve-lang-zh_TW.js /usr/share/pve-i18n/pve-lang-zh_TW.js.bak
     # rm /usr/share/pve-i18n/pve-lang-zh_TW.js
-    # wget -P /usr/share/pve-i18n/ https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/locale/pve-lang-zh_TW_5.1.js
+    # wget -P /usr/share/pve-i18n/pve-lang-zh_TW.js https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/locale/pve-lang-zh_TW_5.1.js
 
     // 修改 pvemanagerlib.js
     // 5.0 在 /usr/share/pve-manager/js/pvemanagerlib.js
