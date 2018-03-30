@@ -9,11 +9,13 @@
 5.0
 
   pve-lang-zh_TW.js 覆蓋到 /usr/share/pve-manager/locale/ 內。
+  
   修改 /usr/share/pve-manager/js/pvemanagerlib.js 檔，加入正體中文至 language_map 中。
   
 5.1
 
   pve-lang-zh_TW_5.1.js 覆蓋到 /usr/share/pve-i18n/pve-lang-zh_TW.js。 
+  
   修改 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js 檔，加入正體中文至 language_map 中。
 
 &nbsp;&nbsp;
