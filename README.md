@@ -1,6 +1,6 @@
-# PVE-CPatch / Proxmox VE 正體中文化更新檔
+# PVE-CPatch / Proxmox VE 繁體中文化更新檔
 
-本更新檔使用官方的語系檔進行修改，因為有從原始碼挖到更多的語系對應，所以這個正體中文版本的中文化程度會比官方的簡體中文語系還完整，目前對應版本 5.0, 5.1。
+本更新檔使用官方的語系檔進行修改，因為有從原始碼挖到更多的語系對應，所以這個繁體中文版本的中文化程度會比官方的簡體中文語系還完整，目前對應版本 5.0, 5.1。
 
 &nbsp;&nbsp;
 &nbsp;&nbsp;
@@ -10,13 +10,13 @@
 
   pve-lang-zh_TW.js 覆蓋到 /usr/share/pve-manager/locale/ 內。
   
-  修改 /usr/share/pve-manager/js/pvemanagerlib.js 檔，加入正體中文至 language_map 中。
+  修改 /usr/share/pve-manager/js/pvemanagerlib.js 檔，加入繁體中文至 language_map 中。
   
 5.1
 
   pve-lang-zh_TW_5.1.js 覆蓋到 /usr/share/pve-i18n/pve-lang-zh_TW.js。 
   
-  修改 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js 檔，加入正體中文至 language_map 中。
+  修改 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js 檔，加入繁體中文至 language_map 中。
 
 &nbsp;&nbsp;
 &nbsp;&nbsp;
@@ -56,7 +56,7 @@
 ## 畫面範例
 
 
-#### 正體中文化後介面
+#### 繁體中文化後介面
 &nbsp;&nbsp;
 登入介面
 ![image](https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/%E8%AA%AA%E6%98%8E%E5%9C%96/Login.png)
