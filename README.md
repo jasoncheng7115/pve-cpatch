@@ -18,6 +18,11 @@
   
   修改 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js 檔，加入繁體中文至 language_map 中。
 
+5.2
+
+  pve-lang-zh_TW_5.2.js 覆蓋到 /usr/share/pve-i18n/pve-lang-zh_TW.js。 
+  
+
 &nbsp;&nbsp;
 &nbsp;&nbsp;
           
@@ -33,9 +38,15 @@
     # rm /usr/share/pve-i18n/pve-lang-zh_TW.js
     # wget -P /usr/share/pve-i18n/pve-lang-zh_TW.js https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/locale/pve-lang-zh_TW_5.1.js
 
+    // PVE 5.2
+    # mv /usr/share/pve-i18n/pve-lang-zh_TW.js /usr/share/pve-i18n/pve-lang-zh_TW.js.bak
+    # rm /usr/share/pve-i18n/pve-lang-zh_TW.js
+    # wget -P /usr/share/pve-i18n/pve-lang-zh_TW.js https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/locale/pve-lang-zh_TW_5.2.js
+
     // 修改 pvemanagerlib.js
     // 5.0 在 /usr/share/pve-manager/js/pvemanagerlib.js
     // 5.1 在 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
+    // 5.2 不需要修改這個檔案
     // 找到 language_map，加入正體中文
     ...
     language_map: {
