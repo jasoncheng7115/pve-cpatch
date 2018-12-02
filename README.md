@@ -56,7 +56,7 @@
     ...
     
 
-完成後，登入頁面的語系即可選擇
+完成後，登入頁面的語系即可選擇  
 5.0、5.1：Chinese (Taiwan)  
 5.2：Chinese (Traditional)
   
