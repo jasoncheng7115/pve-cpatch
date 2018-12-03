@@ -46,7 +46,7 @@
     // 修改 pvemanagerlib.js
     // 5.0 在 /usr/share/pve-manager/js/pvemanagerlib.js
     // 5.1 在 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
-    // 5.2 不需要修改這個檔案
+    // 5.2 不需要修改這個檔案，除非你的 pve-i18n 套件版本小於 1.0-6
     // 找到 language_map，加入正體中文
     ...
     language_map: {
