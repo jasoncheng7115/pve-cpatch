@@ -7,23 +7,23 @@
 &nbsp;&nbsp;
 
 ## 使用說明
-PVE 5.0
+### PVE 5.0
 
   pve-lang-zh_TW.js 覆蓋到 /usr/share/pve-manager/locale/ 內。
   
   修改 /usr/share/pve-manager/js/pvemanagerlib.js 檔，加入繁體中文至 language_map 中。
   
-PVE 5.1
+### PVE 5.1
 
   pve-lang-zh_TW_5.1.js 覆蓋到 /usr/share/pve-i18n/pve-lang-zh_TW.js。 
   
   修改 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js 檔，加入繁體中文至 language_map 中。
 
-PVE 5.2
+### PVE 5.2
 
   pve-lang-zh_TW_5.2.js 覆蓋到 /usr/share/pve-i18n/pve-lang-zh_TW.js。 
    
-PMG 5.1 
+### PMG 5.1 
 
   pve-lang-zh_TW_5.3.js 覆蓋到 /usr/share/pmg-i18n/pmg-lang-zh_TW.js。   
    
@@ -48,8 +48,6 @@ PMG 5.1
     # rm /usr/share/pve-i18n/pve-lang-zh_TW.js
     # wget -P /usr/share/pve-i18n/pve-lang-zh_TW.js https://raw.githubusercontent.com/jasoncheng7115/pve-cpatch/master/locale/pve-lang-zh_TW_5.2.js
 
-
-  
     // PMG 5.1
     # mv /usr/share/pmg-i18n/pmg-lang-zh_TW.js /usr/share/pmg-i18n/pmg-lang-zh_TW.js.bak
     # rm /usr/share/pmg-i18n/pmg-lang-zh_TW.js
