@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Proxmox Status Report - [% date %] ([% fqdn %])</title>
+<style>
+
+table {
+width: 500px;
+}
+
+table tr:nth-child(even) {
+background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+background-color: #fff;
+}
+
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+</style>
+</head>
+<body>
+
+  [% IF cluster %]
+  <h2>叢集狀態</h2>
+  <table>
+    <tr>
+      <th>主機名稱</th>
+      <th>IP 位址</th>
+      <th>角色</th>
+      <th>狀態</th>
+      <th>負載</th>
+      <th>記憶體</th>
+      <th>磁蝶</th>
+    </tr>
+    [% FOREACH item IN cluster %]
+    <tr>
+      <td>[% item.hostname %]</td>
+      <td>[% item.ip %]</td>
+      <td>[% item.type %]</td>
+      <td>[% item.state %]</td>
+      <td>[% item.loadavg1 %]</td>
+      <td>[% item.memory %]</td>
+      <td>[% item.disk %]</td>
+    </tr>
+    [% END %]
+  </table>
+  [% END %]
+
+  [% IF system %]
+  <h2>系統狀態</h2>
+  <table>
+    [% FOREACH item IN system %]
+    <tr>
+      <td>[% item.text %]</td>
+      <td style="width:150px;">[% item.value %]</td>
+    </tr>
+    [% END %]
+  </table>
+  [% END %]
+
+  [% IF incoming %]
+  <h2>內送郵件 (24 小時)</h2>
+  <table>
+    [% FOREACH item IN incoming %]
+    <tr>
+      <td>[% item.text %][% IF item.percentage.defined %] ([% item.percentage %]%)[% END %]</td>
+      <td style="width:150px;">[% item.value %]</td>
+    </tr>
+    [% END %]
+  </table>
+  [% END %]
+
+  [% IF outgoing %]
+  <h2>外寄郵件 (24 小時)</h2>
+  <table>
+    [% FOREACH item IN outgoing %]
+    <tr>
+      <td>[% item.text %][% IF item.percentage.defined %] ([% item.percentage %]%)[% END %]</td>
+      <td style="width:150px;">[% item.value %]</td>
+    </tr>
+    [% END %]
+  </table>
+  [% END %]
+
+  [% IF virusstat %]
+  <h2>病毒郵件圖表 (前 10)</h2>
+  <table>
+    <tr>
+      <th>病毒名稱</th>
+      <th>數量</th>
+    </tr>
+    [% FOREACH item IN virusstat %]
+    <tr>
+      <td>[% item.name %]</td>
+      <td style="width:150px;">[% item.count %]</td>
+    </tr>
+    [% END %]
+  </table>
+  [% END %]
+
+  [% IF virusquar %]
+  <h2>病毒郵件隔離</h2>
+  <table>
+    [% FOREACH item IN virusquar %]
+    <tr>
+      <td>[% item.text %]</td>
+      <td style="width:150px;">[% item.value %]</td>
+    </tr>
+    [% END %]
+  </table>
+  [% END %]
+
+  [% IF spamquar %]
+  <h2>垃圾郵件隔離</h2>
+  <table>
+    [% FOREACH item IN spamquar %]
+    <tr>
+      <td>[% item.text %]</td>
+      <td style="width:150px;">[% item.value %]</td>
+    </tr>
+    [% END %]
+  </table>
+  [% END %]
+
+</body>
+</html>
