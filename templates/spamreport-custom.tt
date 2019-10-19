@@ -1,0 +1,63 @@
+[%- IF timespan == 'week' -%]
+[%- SET title = "Weekly Spam Report for '${pmail}' - ${date}'" -%]
+[%- SET title2 = "每週垃圾郵件報告 '${pmail}' - ${date}'" -%]
+[%- ELSE %]
+[%- SET title = "Daily Spam Report for '${pmail}' - ${date}" -%]
+[%- SET title2 = "每日垃圾郵件報告 '${pmail}' - ${date}" -%]
+[%- END -%]
+
+[% BLOCK tooltip %]Received: [% d.date %] [% d.time %]
+From: [% d.envelope_sender %]
+TO: [% d.receiver %]
+Size: [% d.bytes %]
+Score: [% d.spamlevel %]
+File: [% d.file %]
+[% END %]
+
+<html>
+  <head>
+    <title>[% title %]</title>
+  </head>
+  <body>
+
+    <div align=center>
+
+
+      <table width='100%'>
+	<tr>
+	  <td colspan=2>
+	    <div style='width:600px;'><h2>[% title2 %]</h2></div>
+	  </td>
+	</tr>
+
+	<tr><td colspan=2><hr></td></tr>
+
+	<!--start entries-->
+	[% FOREACH item IN items %]
+	<tr>
+	  <td>[% item.from %]</td>
+	  <td align=right nowrap>[% item.date %] [% item.time %]</td>
+	</tr>
+	<tr title='[% PROCESS tooltip d=item | html  %]'>
+	  <td><a style='cursor:pointer;' href='[% item.href | url %]'><b>[% item.subject %]</b></a></td>
+	  <td align=right nowrap>
+	    <div style='font-size:xx-small;'>
+	      <a href='[% item.href | url %]&action=whitelist'>加入白名單</a>&nbsp;
+	      <a href='[% item.href | url %]&action=blacklist'>加入黑名單</a>&nbsp;
+	      <a href='[% item.href | url %]&action=deliver'>重新投遞</a>&nbsp;
+	      <a href='[% item.href | url %]&action=delete'>刪除</a>
+	    </div>
+	  </td>
+	</tr>
+	<tr><td colspan=2><hr></td></tr>
+	[% END %]
+	<!--end entries-->
+
+      </table>
+
+      <p>您可開啟 <a href='[% managehref | url %]'>管理介面</a> 管理被隔離的垃圾郵件。</p>
+   
+    </div>
+
+  </body>
+</html>
