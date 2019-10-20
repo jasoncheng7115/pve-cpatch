@@ -22,10 +22,18 @@
 ### PVE 5.2
 
   pve-lang-zh_TW_5.2.js 覆蓋到 /usr/share/pve-i18n/pve-lang-zh_TW.js。 
-   
+  
+### PVE 6.0
+
+  pve-lang-zh_TW_6.0.js 覆蓋到 /usr/share/pve-i18n/pve-lang-zh_TW.js。 
+  
 ### PMG 5.1 
 
   pve-lang-zh_TW_5.3.js 覆蓋到 /usr/share/pmg-i18n/pmg-lang-zh_TW.js。   
+     
+### PMG 6.0 
+
+  pve-lang-zh_TW_6.0.js 覆蓋到 /usr/share/pmg-i18n/pmg-lang-zh_TW.js。   
    
    
 &nbsp;&nbsp;
